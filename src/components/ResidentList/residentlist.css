@@ -1,0 +1,11 @@
+.container_residentCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+  gap: 1rem;
+  background-color: #084851;
+  padding: 40px;
+}
+
+.container_residentCard li {
+  list-style: none;
+}

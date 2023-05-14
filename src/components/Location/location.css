@@ -1,0 +1,38 @@
+:root {
+  --gren1: #3f7239;
+  --gren2: #72cf22;
+  --gren3: #062226;
+  --white2: #ffffff;
+  --grey1: #abb9bb;
+}
+
+.container_location {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30% 70%;
+  background-color: var(--gren3);
+  height: 126px;
+  width: 890px;
+  font-family: Roboto;
+}
+
+.container_location h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--gren2);
+}
+
+.container_location ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container_location b {
+  color: var(--grey1);
+}
+.container_location li {
+  color: var(--gren1);
+}

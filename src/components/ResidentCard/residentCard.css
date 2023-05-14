@@ -1,0 +1,40 @@
+:root {
+  --gren: #062226;
+  --grey: #7e7e7e;
+  --white: #fbfbfb;
+}
+h3 {
+  padding-bottom: 4px;
+  border-bottom: #084851 solid 1px;
+  margin: 0px;
+}
+.resident_card {
+  padding: 0;
+  font-family: Roboto;
+  color: var(--white);
+  background-color: var(--gren);
+  border-radius: 10px;
+  width: 302px;
+}
+.resident_card_info {
+  padding: 1rem;
+}
+b {
+  color: var(--grey);
+}
+ul {
+  padding: 0;
+}
+.resident_card__img {
+  padding: 1px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resident_card__img img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-width: 100%;
+}
