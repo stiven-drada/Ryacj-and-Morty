@@ -38,3 +38,34 @@ ul {
   border-top-right-radius: 10px;
   max-width: 100%;
 }
+
+@media (max-width: 360px) and (max-width: 480px) {
+  h3 {
+    font-size: 12px;
+  }
+  .resident_card {
+    width: 150px;
+  }
+  .resident_card_info {
+    padding: 1rem;
+  }
+  b {
+    font-size: 10px;
+  }
+  ul {
+    padding: 0;
+    font-size: 10px;
+  }
+  .resident_card__img {
+    padding: 1px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .resident_card__img img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 100%;
+  }
+}

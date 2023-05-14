@@ -9,3 +9,10 @@
 .container_residentCard li {
   list-style: none;
 }
+@media (max-width: 360px) and (max-width: 480px) {
+  .container_residentCard {
+    padding: 5px;
+    gap: 10px;
+    grid-template-columns: 50% 50%;
+  }
+}

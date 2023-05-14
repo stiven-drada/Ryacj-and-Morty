@@ -1,12 +1,12 @@
-import Location from "./components/Location/Location";
 import Loader from "./components/Loader/Loader";
+import Location from "./components/Location/Location";
+import SearchForm from "./components/SearchForm/SearchForm";
 import ResidentList from "./components/ResidentList/ResidentList";
 import { getLocationById } from "./services/getLocationById";
 import { getRandomNumber } from "./utils/getRandomNumber";
 import { useEffect, useState } from "react";
 
 import "./App.css";
-import SearchForm from "./components/SearchForm/SearchForm";
 
 function App() {
   const [location, setLocation] = useState(null);
