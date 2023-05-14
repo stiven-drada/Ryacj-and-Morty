@@ -1,7 +1,7 @@
 import Location from "./components/Location/Location";
 import Loader from "./components/Loader/Loader";
 import ResidentList from "./components/ResidentList/ResidentList";
-import { getLocationById } from "./services/getlocationById";
+import { getLocationById } from "./services/getLocationById";
 import { getRandomNumber } from "./utils/getRandomNumber";
 import { useEffect, useState } from "react";
 
