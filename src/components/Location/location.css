@@ -37,7 +37,18 @@
   color: var(--gren1);
 }
 
-@media (max-width: 360px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
+  .container_location {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 100%;
+    background-color: var(--gren3);
+    height: 100%;
+    width: 250px;
+    padding: 5px;
+    margin: 0px;
+  }
+
   .container_location h2 {
     display: flex;
     justify-content: center;
@@ -46,9 +57,11 @@
     font-size: 12px;
     margin: 0;
   }
+
   .container_location b {
     font-size: 10px;
   }
+
   .container_location li {
     font-size: 10px;
   }
@@ -58,15 +71,5 @@
     justify-content: center;
     flex-wrap: nowrap;
     gap: 5px;
-  }
-  .container_location {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20% 100%;
-    background-color: var(--gren3);
-    height: 50px;
-    width: 890px;
-    padding: 5px;
-    margin: 0px;
   }
 }
