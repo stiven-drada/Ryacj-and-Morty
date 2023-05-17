@@ -31,6 +31,12 @@ header h1 {
   justify-content: center;
 }
 
+.container_pagination {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
 .container_residents {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
