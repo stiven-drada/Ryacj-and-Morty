@@ -42,7 +42,7 @@ function App() {
   return (
     <main>
       <header>
-        <h1>Ryacj and Morty</h1>
+        <h1>Rick and Morty</h1>
       </header>
 
       <section className="constainer_location">

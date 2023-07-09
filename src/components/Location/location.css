@@ -73,3 +73,9 @@
     gap: 5px;
   }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .container_location {
+    width: 590px;
+    height: 100px;
+  }
+}
