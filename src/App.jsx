@@ -45,6 +45,18 @@ function App() {
         <h1>Rick and Morty</h1>
       </header>
 
+      <article className="intro">
+        <h2>¡Bienvenido a la Wiki de Rick y Morty!</h2>
+        <p>
+          Rick y Morty es una serie de televisión estadounidense de animación
+          para adultos creada por Justin Roiland y Dan Harmon para Adult Swim.
+          La serie sigue las aventuras de un científico alcohólico, Rick, y su
+          fácilmente influenciable nieto, Morty, quienes pasan el tiempo entre
+          la vida doméstica familiar y los viajes espaciales intergalácticos.
+          Aquí podrás ver todos los personajes y aprender más de ellos.
+        </p>
+      </article>
+
       <section className="constainer_location">
         {location ? <Location location={location} /> : <Loader />}
       </section>

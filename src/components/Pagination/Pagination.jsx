@@ -6,7 +6,7 @@ const Pagination = ({ pages, changePage, pageNumber }) => {
         className="button_back"
         onClick={() => changePage(pageNumber - 1)}
       >
-        Back
+        Atras
       </button>
       {pages.map((i) => (
         <button
@@ -22,7 +22,7 @@ const Pagination = ({ pages, changePage, pageNumber }) => {
         className="button_next"
         onClick={() => changePage(pageNumber + 1)}
       >
-        Next
+        Siguiente
       </button>
     </div>
   );

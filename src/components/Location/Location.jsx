@@ -6,15 +6,15 @@ const Location = ({ location }) => {
       <h2>{location.name}</h2>
       <ul>
         <li>
-          <b>Type: </b>
+          <b>Tipo: </b>
           {location.type}
         </li>
         <li>
-          <b>Dimension: </b>
+          <b>Dimensión: </b>
           {location.dimension}
         </li>
         <li>
-          <b>Population: </b>
+          <b>Población: </b>
           {location.residents.length}
         </li>
       </ul>

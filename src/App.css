@@ -13,7 +13,7 @@ header {
     url("https://i.imgur.com/LH3b1Bw.jpg");
   background-repeat: no-repeat;
   background-position: right bottom, center;
-  background-size: 20vw, cover;
+  background-size: min(20vw, 200px), cover;
 }
 header h1 {
   color: RGB(0, 177, 200);
@@ -23,6 +23,18 @@ header h1 {
   text-shadow: 1px 1px black, -1px -1px black, 3px 3px 1px RGB(179, 225, 121),
     -3px -3px 1px RGB(179, 225, 121), 6px 6px 5px RGB(250, 248, 234),
     -6px -6px 5px RGB(250, 248, 234);
+}
+
+.intro {
+  color: RGB(189, 196, 190);
+  font-family: roboto;
+  width: min(90%, 1024px);
+  padding: 0 20px;
+  margin: auto;
+}
+.intro h2 {
+  text-shadow: 2px 2px 5px RGB(123, 214, 34), -2px -2px 5px RGB(123, 214, 34);
+  text-align: center;
 }
 
 .constainer_location {

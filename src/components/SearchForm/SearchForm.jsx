@@ -9,11 +9,11 @@ const SearchForm = ({ onSubmit }) => {
     const newValue = e.target.value;
 
     if (newValue && isNaN(Number(newValue))) {
-      setErrorSearchLocation("El id solo deve  contener numeros");
+      setErrorSearchLocation("El ID solo deve  contener numeros");
     } else if (newValue && Number(newValue) < 1) {
-      setErrorSearchLocation("El menor id existente es 1");
+      setErrorSearchLocation("El menor ID existente es 1");
     } else if (newValue && Number(newValue) > 126) {
-      setErrorSearchLocation("El id maximo exitente es 126");
+      setErrorSearchLocation("El ID maximo exitente es 126");
     } else {
       setErrorSearchLocation("");
     }
@@ -28,15 +28,20 @@ const SearchForm = ({ onSubmit }) => {
   };
 
   return (
-    <form onSubmit={handlerSubmit}>
+    <form onSubmit={handlerSubmit} className="forLocation">
+      <label htmlFor="idLocation">
+        Escriba un ID entre 1 y 126 (cada ID es una ubicación) o presione el
+        botón buscar para una ubicación aleatoria.
+      </label>
+      <br />
       <input
         type="text"
-        name=""
-        id=""
+        name="idLocation"
+        id="idLocation"
         value={searchLocation}
         onChange={handleChange}
       />
-      <button type="submit">Search</button>
+      <button type="submit">Buscar</button>
       <p style={{ color: "red" }}>{errorSearchLocation}</p>
     </form>
   );
