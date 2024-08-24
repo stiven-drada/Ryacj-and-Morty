@@ -3,23 +3,26 @@ main {
 }
 
 header {
+  font-size: 16px;
   width: 100%;
   height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://i.imgur.com/YCOqw0t.jpg");
+  background-image: url("https://i.imgur.com/HEmutie.png"),
+    url("https://i.imgur.com/LH3b1Bw.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: right bottom, center;
+  background-size: 20vw, cover;
 }
 header h1 {
+  color: RGB(0, 177, 200);
   margin: 0;
-  height: 106px;
-  width: 454px;
-  font-size: 4.2em;
-  line-height: 1.1;
+  font-size: clamp(1.7rem, 1.043rem + 3.286vw, 4rem);
   font-family: "Get Schwifty";
+  text-shadow: 1px 1px black, -1px -1px black, 3px 3px 1px RGB(179, 225, 121),
+    -3px -3px 1px RGB(179, 225, 121), 6px 6px 5px RGB(250, 248, 234),
+    -6px -6px 5px RGB(250, 248, 234);
 }
 
 .constainer_location {
@@ -49,16 +52,7 @@ header h1 {
 
 @media (max-width: 480px) {
   header {
-    background-size: 100%;
     height: 93px;
-  }
-  header h1 {
-    height: 45px;
-    width: 120px;
-    font-size: 1rem;
-    text-align: center;
-    position: relative;
-    top: 10px;
   }
 
   .constainer_location {
@@ -80,17 +74,4 @@ header h1 {
   header {
     height: 150px;
   }
-  header h1 {
-    font-size: 2.5rem;
-    text-align: center;
-    position: relative;
-    top: 30px;
-  }
 }
-/*
-@media (min-width: 576px) and (max-width: 767px) {
-  header {
-    background-size: 360px;
-    height: 93px;
-  }
-} */

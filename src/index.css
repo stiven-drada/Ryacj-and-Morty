@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #084851;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
 @font-face {
