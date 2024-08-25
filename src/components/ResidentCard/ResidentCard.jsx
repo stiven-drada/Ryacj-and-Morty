@@ -12,7 +12,7 @@ const ResidentCard = ({ url }) => {
     loadResident();
   }, [url]);
   return (
-    <main className="resident_card">
+    <section className="resident_card">
       {resident ? (
         <article>
           <div className="resident_card__img">
@@ -47,7 +47,7 @@ const ResidentCard = ({ url }) => {
       ) : (
         <p>loading...</p>
       )}
-    </main>
+    </section>
   );
 };
 
