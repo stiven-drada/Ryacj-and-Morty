@@ -57,7 +57,7 @@ function App() {
         </p>
       </article>
 
-      <section className="constainer_location">
+      <section className="constainer_location" id="location">
         {location ? <Location location={location} /> : <Loader />}
       </section>
 
@@ -83,6 +83,14 @@ function App() {
           <p>Loading residents...</p>
         )}
       </section>
+      <button className="returnHome">
+        <a onClick={(e) => e.preventDefault} href="#location">
+          <img
+            src="src\assets\icons\icons8-arriba-círculo-48.png"
+            alt="arrow"
+          />
+        </a>
+      </button>
     </main>
   );
 }

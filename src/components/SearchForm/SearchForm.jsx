@@ -34,14 +34,16 @@ const SearchForm = ({ onSubmit }) => {
         botón buscar para una ubicación aleatoria.
       </label>
       <br />
-      <input
-        type="text"
-        name="idLocation"
-        id="idLocation"
-        value={searchLocation}
-        onChange={handleChange}
-      />
-      <button type="submit">Buscar</button>
+      <div>
+        <input
+          type="text"
+          name="idLocation"
+          id="idLocation"
+          value={searchLocation}
+          onChange={handleChange}
+        />
+        <button type="submit">Buscar</button>
+      </div>
       <p style={{ color: "red" }}>{errorSearchLocation}</p>
     </form>
   );

@@ -2,3 +2,21 @@
 .forLocation button[type="submit"] {
   font-family: roboto;
 }
+
+.forLocation label {
+  color: #7e7e7e;
+}
+.forLocation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: min(90%, 1024px);
+  margin: auto;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .forLocation label {
+    font-size: 10px;
+  }
+}

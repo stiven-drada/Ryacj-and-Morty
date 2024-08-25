@@ -44,7 +44,7 @@
     grid-template-rows: 20% 100%;
     background-color: var(--gren3);
     height: 100%;
-    width: 250px;
+    width: 90%;
     padding: 5px;
     margin: 0px;
   }
@@ -70,7 +70,7 @@
     /* flex-direction: column; */
     justify-content: center;
     flex-wrap: nowrap;
-    gap: 5px;
+    gap: 20px;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {

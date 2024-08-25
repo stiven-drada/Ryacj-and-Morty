@@ -1,6 +1,4 @@
 .container_buttons button {
   font-family: roboto;
   height: 2rem;
-  position: sticky;
-  top: 0;
 }
