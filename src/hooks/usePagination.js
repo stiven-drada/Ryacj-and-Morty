@@ -24,5 +24,6 @@ export const usePagination = (list, quantityPerPage) => {
     residentsSlice,
     pages,
     changePage,
+    setPageNumber,
   };
 };

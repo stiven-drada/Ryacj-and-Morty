@@ -22,7 +22,7 @@ function App() {
     } else {
       locationInfo = await getLocationById(id);
     }
-
+    setPageNumber(1);
     setLocation(locationInfo);
   };
 
@@ -35,10 +35,8 @@ function App() {
     loadLocation();
   }, []);
 
-  const { pageNumber, residentsSlice, pages, changePage } = usePagination(
-    location ? location.residents : [],
-    quantityPerPage
-  );
+  const { pageNumber, residentsSlice, pages, changePage, setPageNumber } =
+    usePagination(location ? location.residents : [], quantityPerPage);
   return (
     <main>
       <header>
@@ -85,7 +83,7 @@ function App() {
       </section>
       <button className="returnHome">
         <a onClick={(e) => e.preventDefault} href="#location">
-          <img src=".\assets\icons\icons8-arriba-círculo-48.png" alt="arrow" />
+          <img src="https://i.imgur.com/YSFMfY1.png" alt="arrow" />
         </a>
       </button>
     </main>
