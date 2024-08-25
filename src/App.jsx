@@ -85,10 +85,7 @@ function App() {
       </section>
       <button className="returnHome">
         <a onClick={(e) => e.preventDefault} href="#location">
-          <img
-            src="./src\assets\icons\icons8-arriba-círculo-48.png"
-            alt="arrow"
-          />
+          <img src=".\assets\icons\icons8-arriba-círculo-48.png" alt="arrow" />
         </a>
       </button>
     </main>
